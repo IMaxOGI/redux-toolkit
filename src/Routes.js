@@ -5,16 +5,16 @@ import {
   Route,
   Switch,
 } from "react-router-dom";
-import React, { useEfect } from "react";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchProducts } from "./redux/slices/product";
 
 export default function Blog() {
   const dispatch = useDispatch();
-  useEfect(() => {
+  useEffect(() => {
     dispatch(fetchProducts());
     // dispatch(fetchProducts());
-  }, []);
+  }, [dispatch]);
 
   return (
     <Container>

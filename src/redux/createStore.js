@@ -9,7 +9,7 @@ export default () => {
       cart: cartReducer,
       products: productsReducer,
     },
-    middleware: [...getDefaultMiddleware],
+    middleware: [...getDefaultMiddleware()],
     devTools: true,
   });
 };
