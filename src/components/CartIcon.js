@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/CartItem.css";
 import { Icon } from "semantic-ui-react";
-import { useSelector } from "redux-redux";
+import { useSelector } from "react-redux";
 import { getTotalCount, getTotalPrice } from "../redux/selectors/cart";
 
 function CartIcon() {

@@ -2,7 +2,7 @@ import React from "react";
 import { Menu } from "semantic-ui-react";
 import { NavLink } from "react-router-dom";
 import CartIcon from "./CartIcon";
-import { useDispatch, useSelector } from "react-redux ";
+import { useDispatch, useSelector } from "react-redux";
 import { getCurrentAuthState } from "../redux/selectors/auth";
 import { logout } from "../redux/slices/auth";
 

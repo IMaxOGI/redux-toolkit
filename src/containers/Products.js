@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import { Container, Card } from "semantic-ui-react";
 import ProductItem from "../components/ProductItem";
 import { getProducts, getProductsLoading } from "../redux/selectors/products";
-import DimmerLoader from "../../../home-works/hw4/blog-v2/components/DimmerLoader";
+import DimmerLoader from "../components/DrimmerLoader";
 
 function Products() {
   const products = useSelector(getProducts);

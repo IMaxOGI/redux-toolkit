@@ -19,7 +19,7 @@ const productsSlice = createSlice({
       state.loading = true;
     },
     [fetchProducts.fulfilled]: (state, action) => {
-      state.loading = true;
+      state.loading = false;
       state.list = action.payload;
     },
     [fetchProducts.rejected]: (state, action) => {

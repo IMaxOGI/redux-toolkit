@@ -1,4 +1,3 @@
-import React, { useMemo } from "react";
 import CardList from "../components/CartList";
 import { Header } from "semantic-ui-react";
 import { useSelector } from "react-redux";
