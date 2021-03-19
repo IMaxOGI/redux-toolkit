@@ -13,6 +13,7 @@ const logout = createAsyncThunk("auth/logout", async () => {
 
 const fetchSession = createAsyncThunk("auth/fetchSession", async () => {
   const response = await apiClient.get("/auth/me");
+  console.log(response.data);
   return response.data;
 });
 
