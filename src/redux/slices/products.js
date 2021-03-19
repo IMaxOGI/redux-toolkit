@@ -2,7 +2,10 @@ import axios from "axios";
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 const fetchProducts = createAsyncThunk("products/fetchProducts", async () => {
-  const response = await axios.get("https://fakestoreapi.com/products");
+  const response = await axios.get(
+    "https://fakestoreapi.herokuapp.com/products"
+  );
+  console.log(response.data);
   return response.data;
 });
 

@@ -11,7 +11,7 @@ import Cart from "./containers/Cart";
 import Register from "./containers/Register";
 import NotFoundPage from "./containers/404";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchProducts } from "./redux/slices/product";
+import { fetchProducts } from "./redux/slices/products";
 import Login from "./containers/Login";
 import Navbar from "./components/Navbar";
 import Home from "./containers/Home";

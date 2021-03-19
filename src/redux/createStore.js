@@ -1,7 +1,7 @@
 /* eslint-disable import/no-anonymous-default-export */
 import { configureStore, getDefaultMiddleware } from "@reduxjs/toolkit";
 import cartReducer from "./slices/cart";
-import productsReducer from "./slices/product";
+import productsReducer from "./slices/products";
 import authReducer from "./slices/auth";
 
 export default () => {

@@ -6,6 +6,7 @@ import { addProductToCart, removeProductFromCart } from "../redux/slices/cart";
 function CartListItem({ product }) {
   const dispatch = useDispatch();
   const addMoreProducts = () => dispatch(addProductToCart(product.id));
+
   const removeProducts = () =>
     product.count === 1
       ? window.confirm("Are you sure you want to remove the product") &&

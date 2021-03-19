@@ -11,7 +11,7 @@ function Home() {
       <h1>
         {user && (
           <span>
-            Welcome {user.firstName}, please visit{" "}
+            Welcome {user.firstName}, please visit
             <Link to="/products">store</Link> to buy something
           </span>
         )}
