@@ -42,6 +42,10 @@ app.get("/", (req, res) => {
 app.use("/users", userRouter);
 app.use("/auth", authRouter);
 
+app.use((req, res) => {
+  res.sendFile(path.join(__dirname + "/public/index.html"));
+});
+
 app.use(function (err, req, res, next) {
   console.error(err.stack);
   res.status(500).send({ error: err.message });
