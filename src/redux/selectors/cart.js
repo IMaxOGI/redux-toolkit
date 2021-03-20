@@ -6,13 +6,13 @@ export const getProductsInCart = createSelector(
   (state) => state.cart,
   (products, cart) => {
     const result = cart.map((cartItem) => {
-      const { id, img, price, title } = products.find(
+      const { id, image, price, title } = products.find(
         (product) => product.id === cartItem.id
       );
       return {
         id,
         count: cartItem.count,
-        img,
+        image,
         price,
         title,
       };
@@ -36,6 +36,6 @@ export const getTotalPrice = createSelector(
     const result = productsInCart.reduce((sum, product) => {
       return sum + product.price * product.count;
     }, 0);
-    return result;
+    return result.toFixed(2);
   }
 );

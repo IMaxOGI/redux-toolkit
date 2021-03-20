@@ -5,7 +5,7 @@ const fetchProducts = createAsyncThunk("products/fetchProducts", async () => {
   const response = await axios.get(
     "https://fakestoreapi.herokuapp.com/products"
   );
-  console.log(response.data);
+
   return response.data;
 });
 

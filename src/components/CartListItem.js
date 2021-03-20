@@ -27,8 +27,8 @@ function CartListItem({ product }) {
       <List.Content>
         {product.title} -
         <span calssName="muted">
-          {product.price}$ x {product.count} = {product.price} * {product.count}
-          $
+          {product.price}$ x {product.count} =
+          {(product.price * product.count).toFixed(2)}$
         </span>
       </List.Content>
     </List.Item>

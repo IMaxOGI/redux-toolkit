@@ -16,7 +16,6 @@ const jsonParser = bodyParser.json();
 const app = express();
 
 app.use(express.static("public"));
-
 app.use(
   session({
     name: "app.sid",
