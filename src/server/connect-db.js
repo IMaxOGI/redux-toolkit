@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
-const uri =
-  "mongodb+srv://Max:12345@cluster0.rytiy.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
-mongoose.connect(uri, {
+require("dotenv").config();
+
+mongoose.connect(process.env.DB_CONNECTION, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
