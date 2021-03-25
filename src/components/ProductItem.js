@@ -12,7 +12,7 @@ function ProductItem({ product, user }) {
         <Card.Header>{product.title}</Card.Header>
         <Card.Meta>{product.type}</Card.Meta>
         <Card.Description>Price: {product.price}$</Card.Description>
-        <Card.Description>{user.firstname}</Card.Description>
+        <Card.Description>{user.lastname}</Card.Description>
       </Card.Content>
       <Card.Content extra>
         <div className="ui two buttons">
